@@ -1,0 +1,25 @@
+{
+  "name": "opentable-res-proxy",
+  "version": "1.0.0",
+  "description": "Proxy server for Jeff Whittington",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr42-fec-team1/opentable-res-proxy.git"
+  },
+  "author": "Jeff Whittington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr42-fec-team1/opentable-res-proxy/issues"
+  },
+  "homepage": "https://github.com/hrr42-fec-team1/opentable-res-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
