@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
+    "pm2:start": "pm2 start server/index.js",
+    "pm2:stop": "pm2 stop server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/hrr42-fec-team1/opentable-res-proxy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "pm2": "^4.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }

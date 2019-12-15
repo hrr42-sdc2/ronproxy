@@ -2,24 +2,44 @@
 <html>
   <head>
     <title>Proxy server page</title>
+    <link rel="stylesheet" href="./proxy-style.css">
     <link rel="stylesheet" href="http://localhost:3002/react-datepicker.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="http://localhost:3001/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap" rel="stylesheet">
+    <link href="http://localhost:3001/overviewStyle.css" rel="stylesheet">
     <link href="http://localhost:3002/reservationStyle.css" rel="stylesheet">
-    <link href="http://localhost:3003/style.css" rel="stylesheet">
+    <link href="http://localhost:3003/menuStyle.css" rel="stylesheet">
     <link href="http://localhost:3004/imageCarouselStyle.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="http://localhost:3005/imageCarouselTopStyle.css">
   </head>
-  <body>
-    <div id="overview-section">Waiting for overview to load</div>
-    <div id="reservation">Waiting for reservation to load</div>
-    <div id="app">Waiting for menu to load</div>
-    <div id="imageCarousel-session">Waiting for carousel to load</div>
+  <body id="oc">
+    <div id='outer-frame-container'>
+      <div id = 'headers'>
+        <img src='https://s3-us-west-1.amazonaws.com/hrr42-fec1.s3.us-west-1.amazonaws.com/opentableHead.png' width = '100%'/>
+      </div>
+      <div id = 'headers'>
+        <img src='https://s3-us-west-1.amazonaws.com/hrr42-fec1.s3.us-west-1.amazonaws.com/opentableHead.png' width = '100%'/>
+      </div>
+      <div id="imageCarouselTop-session">Waiting for top image carousel to load.</div>
+      <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/hrr42-fec1.s3.us-west-1.amazonaws.com/imageCarouselTop.js"></script>
+      <div id='inner-frame-container'>
+        <div id="overview-section">Waiting for overview to load</div>
+        <div id="imageCarousel-session">Waiting for carousel to load</div>
+        <div id="menu-section">Waiting for menu to load</div>
+      </div>
+      <div id = 'reservationAndMap'>
+        <div id="reservation">Waiting for reservation to load</div>
+      </div>
+      <div id="mapper">Waiting for mapper to load</div>
+      <div id="belowmapper">Waiting for belowmapper to load</div>
+    </div>
     <script src="https://fb.me/react-with-addons-0.14.6.js"></script>
     <script src="https://fb.me/react-dom-0.14.6.js"></script>
     <script type="text/javascript" src="http://localhost:3001/bundle.js"></script>
-    <!-- <script type="text/javascript" src="http://localhost:3002/dist/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:3002/dist/bundle.js"></script>
     <script type="text/javascript" src="http://localhost:3003/bundle.js"></script>
-    <script type="text/javascript" src="http://localhost:3004/bundle.js"></script> -->
+    <script type="text/javascript" src="http://localhost:3004/bundle.js"></script>
   </body>
 </html>
